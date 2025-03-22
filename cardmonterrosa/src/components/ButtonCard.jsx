@@ -1,9 +1,10 @@
 import React from 'react';
+import javaScriptImage from "../img/javaScript.jpg"; // Importa la imagen
 
-function ButtonCard({ imageUrl, title, description, buttonLabel, buttonLink }) {
+function ButtonCard({ title, description, buttonLabel, buttonLink }) {
   return (
-    <div className="card">
-      <img src={imageUrl} className="card-img-top" alt={title} />
+    <div id="button-card" className="card">
+      <img src={javaScriptImage} className="card-img-top" alt={title} />
       <div className="card-body">
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{description}</p>
